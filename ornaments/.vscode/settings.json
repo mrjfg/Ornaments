@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "files.autoGuessEncoding": "true",
+        "bmp.h": "c",
+        "lv_demo_widgets.h": "c",
+        "lv_examples.h": "c",
+        "lv_ex_conf.h": "c",
+        "spi_hard.h": "c",
+        "stat.h": "c",
+        "lvgl.h": "c",
+        "*.ipp": "c"
+    }
+}
