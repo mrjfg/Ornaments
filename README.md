@@ -13,3 +13,7 @@ This test code shows how to configure gpio and how to use gpio interrupt.
  * Connect GPIO18 with GPIO4
  * Connect GPIO19 with GPIO5
  * Generate pulses on GPIO18/19, that triggers interrupt on GPIO4/5
+
+'''
+| _c
+'''

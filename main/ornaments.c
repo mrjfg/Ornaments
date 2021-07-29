@@ -24,6 +24,7 @@
 
 #include "mpu6050.h"
 #include "sdcard.h"
+#include "qi.h"
 /* Littlevgl specific */
 #ifdef LV_LVGL_H_INCLUDE_SIMPLE
 #include "lvgl.h"
@@ -307,7 +308,7 @@ static void create_demo_application(void)
     // lv_img_set_src(icon, &cloud);
 
 
-    lv_obj_t * img = lv_gif_create_from_file(lv_scr_act(), "S/pic/example.gif");
+    //lv_obj_t * img = lv_gif_create_from_file(lv_scr_act(), "S/pic/example.gif");
     /*From file*/
     //lv_img_set_src(icon, "S:/pic/4.bin");
 }
@@ -386,7 +387,7 @@ static void mpu6050_task(void *pvParameters)
 
 void app_main(void)
 {
-
+    qi();
     xTaskCreatePinnedToCore(guiTask, "gui", 4096 * 2, NULL, 0, NULL, 1);
 
     //xTaskCreatePinnedToCore(&mpu6050_task, "mpu6050_task", 2048, NULL, 5, NULL, 0);

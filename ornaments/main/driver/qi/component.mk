@@ -1,2 +1,0 @@
-LOCAL_PATH := $(shell pwd) 
-COMPONENT_ADD_INCLUDEDIRS += $(LOCAL_PATH)/include/

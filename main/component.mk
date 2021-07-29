@@ -1,10 +1,12 @@
-#
-# Main Makefile. This is basically the same as a component makefile.
-#
-LOCAL_PATH := $(shell pwd) 
-COMPONENT_SRCDIRS += ../lv_examples
-COMPONENT_SRCDIRS += ../lv_examples/src/lv_demo_widgets/
+
+COMPONENT_SRCDIRS += driver/dev_imu/
+COMPONENT_SRCDIRS += driver/dev_sdcard/
+COMPONENT_SRCDIRS += driver/dev_spi/
+COMPONENT_SRCDIRS += driver/qi/
  
-# //这天用于添加，需要编译的头文件
- COMPONENT_ADD_INCLUDEDIRS += ../lv_examples
- COMPONENT_ADD_INCLUDEDIRS += ../lv_examples/src/lv_demo_widgets/
+# //这用于添加，需要编译的头文件
+COMPONENT_ADD_INCLUDEDIRS += driver/dev_imu/include/
+COMPONENT_ADD_INCLUDEDIRS += driver/dev_sdcard/include/
+COMPONENT_ADD_INCLUDEDIRS += driver/dev_spi/include/
+COMPONENT_ADD_INCLUDEDIRS += driver/qi/include/
+COMPONENT_ADD_INCLUDEDIRS += ./
